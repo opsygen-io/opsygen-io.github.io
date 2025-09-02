@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found</title>
+  <link rel="icon" href="/favicon.svg" />
+  <meta http-equiv="refresh" content="0; url=/" />
+</head>
+<body>
+  <p>Redirecting… <a href="/">Go to home</a></p>
+  <script>
+    (function() {
+      var l = window.location;
+      var path = l.pathname + l.search + l.hash;
+      if (path && path !== '/' && path !== '/404.html') {
+        l.replace('/' + path.replace(/^\//, ''));
+      }
+    })();
+  </script>
+</body>
+</html>
