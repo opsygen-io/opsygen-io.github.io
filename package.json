@@ -1,0 +1,23 @@
+{
+  "name": "opsygen-io.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/opsygen-io/opsygen-io.github.io.git",
+  "author": "Vladimir Tcherkacheninov <tcherkv@vegacomputers.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.542.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4",
+    "vite": "5"
+  }
+}
