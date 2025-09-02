@@ -13,12 +13,12 @@ import {
 } from 'lucide-react';
 
 export default function About() {
-  const stats = [
-    { number: "2019", label: "Founded" },
-    { number: "150+", label: "Team Members" },
-    { number: "50+", label: "Enterprise Clients" },
-    { number: "99.9%", label: "Platform Uptime" }
-  ];
+  // const stats = [
+  //   { number: "2019", label: "Founded" },
+  //   { number: "150+", label: "Team Members" },
+  //   { number: "50+", label: "Enterprise Clients" },
+  //   { number: "99.9%", label: "Platform Uptime" }
+  // ];
 
   const values = [
     {
@@ -40,22 +40,22 @@ export default function About() {
 
   const team = [
     {
-      name: "Dr. Sarah Chen",
+      name: "Kumar Ratnam",
       role: "CEO & Co-Founder",
-      background: "Former Google AI, Stanford PhD in Computer Science",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
+      background: "Entrepreneur | Visionary | Dreamer | Builder | Investor",
+      image: "https://media.licdn.com/dms/image/v2/C4D03AQGZCvEendRslA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516260320495?e=1759968000&v=beta&t=nKQqlNK_wxlZ8a4k4MujQQv6_74CeWU_MfOnAZ4nqzc"
     },
     {
-      name: "Marcus Rodriguez",
+      name: "Gagandeep Singh Grewal",
       role: "CTO & Co-Founder", 
-      background: "Ex-Amazon Principal Engineer, MIT Computer Science",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+      background: "Entrepreneur | Platform Engineer | Builder | Innovator",
+      image: "https://media.licdn.com/dms/image/v2/C5103AQG5_TsjsSEr0w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1543599499738?e=1759968000&v=beta&t=LUFHqvjaq_1cebDieC0MJYu83_lu2LOSsTQ58AA7E94"
     },
     {
-      name: "Dr. Priya Patel",
-      role: "Head of AI Research",
-      background: "Former Microsoft Research, PhD in Machine Learning",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face"
+      name: "Vladimir Tcherkacheninov",
+      role: "Head of Architecture and AI Research",
+      background: "Platform Thinker | Researcher | Problem Solver | Dreamer",
+      image: "https://media.licdn.com/dms/image/v2/C4E03AQEHSvy6L_r0Fw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1564600751025?e=1759968000&v=beta&t=f29wItYuQnam-Ub1_vGzOSzlCthgIZdWinnkP6cWLPQ"
     }
   ];
 
@@ -74,7 +74,7 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -85,7 +85,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission */}
       <section className="py-16">

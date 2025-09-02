@@ -49,10 +49,8 @@ export default function Layout({ children, currentPageName }) {
             <div className="flex justify-between items-center py-6">
               {/* Logo */}
               <Link to={createPageUrl('Home')} className="flex items-center group">
-                <div className="h-10 w-10 accent-gradient rounded-lg flex items-center justify-center mr-3 group-hover:scale-105 transition-transform">
-                  <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                  </svg>
+                <div className="h-10 w-10 accent-gradient rounded-lg flex items-center justify-center mr-3 group-hover:scale-105 transition-transform overflow-hidden">
+                  <img src="/favicon.svg" alt="Opsygen" className="h-6 w-6" />
                 </div>
                 <span className="text-2xl font-light text-white tracking-tight">Opsygen</span>
               </Link>
@@ -124,10 +122,8 @@ export default function Layout({ children, currentPageName }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center mb-4">
-                <div className="h-8 w-8 accent-gradient rounded-lg flex items-center justify-center mr-3">
-                  <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                  </svg>
+                <div className="h-8 w-8 accent-gradient rounded-lg flex items-center justify-center mr-3 overflow-hidden">
+                  <img src="/favicon.svg" alt="Opsygen" className="h-5 w-5" />
                 </div>
                 <span className="text-xl font-light text-white">Opsygen Ltd.</span>
               </div>
