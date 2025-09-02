@@ -103,7 +103,7 @@ export default function Home() {
             <div className="space-y-8">
               <div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight tracking-tighter leading-none">
-                  <span className="text-gradient">Opsygen for Cloud Operations</span>
+                  <span className="text-gradient">Oxygen for Cloud Operations</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-300 font-light mt-6 leading-relaxed max-w-2xl">
                   Managed applications and expert services on Microsoft Azure — faster, simpler, and smarter for organizations of any size.
