@@ -70,7 +70,7 @@ export default function Products() {
             Products & <span className="text-gradient">Services</span>
           </h1>
           <p className="text-xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
-            Comprehensive solutions designed to revolutionize how enterprises operate in the digital age
+            Simplifying cloud operations with intelligent, automated platforms for every business.
           </p>
         </div>
       </section>
