@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/opsygen-io/opsygen-io.github.io.git",
-  "author": "Vladimir Tcherkacheninov <tcherkv@vegacomputers.com>",
+  "author": "Vladimir Tcherkacheninov <tcherkv@opsygen.io>",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
