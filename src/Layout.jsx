@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -49,8 +48,14 @@ export default function Layout({ children, currentPageName }) {
             <div className="flex justify-between items-center py-6">
               {/* Logo */}
               <Link to={createPageUrl('Home')} className="flex items-center group">
-                <div className="h-10 w-10 accent-gradient rounded-lg flex items-center justify-center mr-3 group-hover:scale-105 transition-transform overflow-hidden">
-                  <img src="/favicon.svg" alt="Opsygen" className="h-6 w-6" />
+                <div className="h-10 w-10 rounded-lg flex items-center justify-center mr-3 group-hover:scale-105 transition-transform overflow-hidden relative">
+                  {/* static favicon only — canvas removed */}
+                  <img
+                    src="/favicon.svg"
+                    alt="Opsygen"
+                    className="absolute inset-0 m-auto w-full h-full object-contain z-10 pointer-events-none select-none"
+                    aria-hidden="true"
+                  />
                 </div>
                 <span className="text-2xl font-light text-white tracking-tight">Opsygen</span>
               </Link>
