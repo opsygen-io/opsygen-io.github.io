@@ -26,8 +26,12 @@
   "waitFor": "postCreateCommand", // otherwise automated jest tests fail
   "features": {
     "node": {
-      "version": "18"
+      "version": "22"
     },
     "github-cli": "latest"
-  }
+  },
+  "mounts": [
+		"type=bind,source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh",
+		"type=bind,source=${localEnv:HOME}/projects/opsygen/code/opsflw/opsflw-portal,target=/home/vscode"
+	],
 }

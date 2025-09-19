@@ -1,47 +1,31 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './Layout.jsx';
-import Home from './Pages/Home.jsx';
-import Products from './Pages/Products.jsx';
-import AIOps from './Pages/AI-Ops.jsx';
-import About from './Pages/About.jsx';
-import Contact from './Pages/Contact.jsx';
+import Dashboard from './Pages/Dashboard.jsx';
+import Users from './Pages/Users.jsx';
+import ActivityLogs from './Pages/ActivityLogs.jsx';
+import Analytics from './Pages/Analytics.jsx';
+import Settings from './Pages/Settings.jsx';
+import './styles.css';
 
-function AppRoutes() {
-	const location = useLocation();
-	const path = location.pathname.replace(/^\/+/, '');
-	const firstSegment = path.split('/')[0] || 'Home';
-
-	const segmentToPageName = {
-		'': 'Home',
-		'Home': 'Home',
-		'Products': 'Products',
-		'AI-Ops': 'AI-Ops',
-		'About': 'About',
-		'Contact': 'Contact',
-	};
-	const currentPageName = segmentToPageName[firstSegment] || 'Home';
-
-	return (
-		<Layout currentPageName={currentPageName}>
-			<Routes>
-				<Route path="/" element={<Navigate to="/Home" replace />} />
-				<Route path="/Home" element={<Home />} />
-				<Route path="/Products" element={<Products />} />
-				<Route path="/AI-Ops" element={<AIOps />} />
-				<Route path="/About" element={<About />} />
-				<Route path="/Contact" element={<Contact />} />
-			</Routes>
-		</Layout>
-	);
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout /> }>
+          <Route index element={<Navigate to="/dashboard" replace />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="users" element={<Users />} />
+          <Route path="activity" element={<ActivityLogs />} />
+          <Route path="analytics" element={<Analytics />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 const root = createRoot(document.getElementById('root'));
-root.render(
-	<React.StrictMode>
-		<BrowserRouter>
-			<AppRoutes />
-		</BrowserRouter>
-	</React.StrictMode>
-);
+root.render(<App />);

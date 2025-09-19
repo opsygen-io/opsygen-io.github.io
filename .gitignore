@@ -1,2 +1,13 @@
 node_modules/*
 .vite/*
+.codex/*
+.devcontainer/.onCreateCommandMarker
+.npm/*
+.dotnet/*
+.vscode-server/*
+
+.devcontainer/.postCreateCommandMarker
+.devcontainer/.updateContentCommandMarker
+.config/*
+.cache/*
+

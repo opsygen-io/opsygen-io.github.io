@@ -1,0 +1,11 @@
+[user]
+	name = Vladimir Tcherkacheninov
+	email = tcherkv@vegacomputers.com
+[credential]
+	helper = "!f() { /home/vscode/.vscode-server/bin/0f0d87fa9e96c856c5212fc86db137ac0d783365/node /tmp/vscode-remote-containers-51d07265-8921-4761-9fcb-01dd91e9c9fc.js git-credential-helper $*; }; f"
+[safe]
+	directory = /home/tcherkv/projects/opsygen/code/opsflow-connect
+	directory = /home/tcherkv/projects/opsygen/code/opsflw-connect/opsflow-connect
+	directory = /home/tcherkv/projects/opsygen/code/opsflw-connect/opsflw-deployments-value-files
+	directory = /home/tcherkv/projects/opsygen/code/opsflw-connect/opsflw-platforms-value-files
+	directory = /home/tcherkv/projects/opsygen/code/opsflw-connect/opsflw-connect-helm-tests
