@@ -1,183 +1,90 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
-import { 
-  Users, 
-  Award, 
-  Globe2, 
-  Rocket,
-  Heart,
-  Target,
-  ArrowRight
-} from 'lucide-react';
-
+import React from "react";
+import { PageHero, CTA } from "../Components";
 export default function About() {
-  // const stats = [
-  //   { number: "2019", label: "Founded" },
-  //   { number: "150+", label: "Team Members" },
-  //   { number: "50+", label: "Enterprise Clients" },
-  //   { number: "99.9%", label: "Platform Uptime" }
-  // ];
-
-  const values = [
-    {
-      icon: <Heart className="h-8 w-8" />,
-      title: "Human-Centered Innovation",
-      description: "Technology should amplify human potential, not replace it"
-    },
-    {
-      icon: <Target className="h-8 w-8" />,
-      title: "Operational Excellence",
-      description: "Every solution we build meets the highest standards of reliability"
-    },
-    {
-      icon: <Globe2 className="h-8 w-8" />,
-      title: "Global Impact",
-      description: "Creating solutions that work for organizations worldwide"
-    }
-  ];
-
-  const team = [
-    {
-      name: "Kumar Ratnam",
-      role: "CEO & Co-Founder",
-      background: "Entrepreneur | Visionary | Dreamer | Builder | Investor",
-      image: "https://media.licdn.com/dms/image/v2/C4D03AQGZCvEendRslA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516260320495?e=1759968000&v=beta&t=nKQqlNK_wxlZ8a4k4MujQQv6_74CeWU_MfOnAZ4nqzc"
-    },
-    {
-      name: "Gagandeep Singh Grewal",
-      role: "CTO & Co-Founder", 
-      background: "Entrepreneur | Platform Engineer | Builder | Innovator",
-      image: "https://media.licdn.com/dms/image/v2/C5103AQG5_TsjsSEr0w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1543599499738?e=1759968000&v=beta&t=LUFHqvjaq_1cebDieC0MJYu83_lu2LOSsTQ58AA7E94"
-    },
-    {
-      name: "Vladimir Tcherkacheninov",
-      role: "Head of Architecture and AI Research",
-      background: "Platform Thinker | Researcher | Problem Solver | Dreamer",
-      image: "https://media.licdn.com/dms/image/v2/C4E03AQEHSvy6L_r0Fw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1564600751025?e=1759968000&v=beta&t=f29wItYuQnam-Ub1_vGzOSzlCthgIZdWinnkP6cWLPQ"
-    }
-  ];
-
   return (
-    <div className="py-12">
-      {/* Hero */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-light text-white mb-8 tracking-tight">
-            About <span className="text-gradient">Opsygen</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-300 font-light max-w-4xl mx-auto leading-relaxed">
-            We're building the future of enterprise operations through intelligent automation and AI-driven insights
+    <>
+      <PageHero
+        eyebrow="About Opsygen"
+        title="Built on engineering. Focused on operations."
+      >
+        <p className="lead">
+          Opsygen Ltd. is a Canadian company focused on enterprise platforms and
+          the operations that sustain them.
+        </p>
+        <p>
+          We bring platform engineering, observability, and automation together
+          to help organizations deploy, manage, and evolve the foundations
+          behind their digital services.
+        </p>
+      </PageHero>
+      <section className="section">
+        <div className="container section-intro">
+          <h2>Our mission</h2>
+          <p className="lead">
+            Make enterprise platforms easier to adopt and operate.
+          </p>
+          <p>
+            We combine delivery through Microsoft Azure, AWS, and Google Cloud
+            marketplaces with engineering expertise across the platform
+            lifecycle—from architecture and integration to ongoing management
+            and improvement.
           </p>
         </div>
       </section>
-
-      {/* Stats */}
-      {/* <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-light text-white mb-2 tracking-tight">{stat.number}</div>
-                <div className="text-slate-400 font-light">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Mission */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-light text-white mb-8">Our Mission</h2>
-              <p className="text-lg text-slate-300 font-light leading-relaxed mb-6">
-                At Opsygen, we believe that the most powerful operations are those that seamlessly blend human intelligence with artificial intelligence. Our mission is to create technology that doesn't just automate—it elevates.
-              </p>
-              <p className="text-lg text-slate-300 font-light leading-relaxed">
-                Founded by a team of AI researchers and enterprise technology veterans, we're committed to building solutions that solve real-world operational challenges while maintaining the human element that makes businesses truly successful.
-              </p>
-            </div>
-            
-            <div className="relative">
-              <div className="glass-effect rounded-2xl p-8">
-                <div className="flex items-center justify-center h-64">
-                  <Rocket className="h-32 w-32 text-purple-400" />
-                  <div className="absolute inset-0 bg-purple-500/10 rounded-2xl blur-xl"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-light text-white mb-12 text-center">Our Values</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {values.map((value, index) => (
-              <div key={index} className="glass-effect rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300">
-                <div className="text-purple-400 mb-4 flex justify-center">
-                  {value.icon}
-                </div>
-                <h3 className="text-xl font-medium text-white mb-4">{value.title}</h3>
-                <p className="text-slate-300 font-light leading-relaxed">{value.description}</p>
-              </div>
+      <section className="section white">
+        <div className="container">
+          <h2>Our approach</h2>
+          <div className="two-column">
+            {[
+              [
+                "Design for operations",
+                "Consider reliability, security, visibility, and maintainability from the beginning.",
+              ],
+              [
+                "Make delivery repeatable",
+                "Build reusable foundations and automated workflows that improve consistency across environments.",
+              ],
+              [
+                "Work with your teams",
+                "Connect platform capabilities with existing systems, responsibilities, and business requirements.",
+              ],
+              [
+                "Advance AI with purpose",
+                "Develop AI assistance around practical operational needs, supporting evidence, and accountable human oversight.",
+              ],
+            ].map(([t, p]) => (
+              <article key={t}>
+                <h3>{t}</h3>
+                <p>{p}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Team */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-light text-white mb-12 text-center">Leadership Team</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="glass-effect rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 group">
-                <div className="relative mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform"
-                  />
-                  <div className="absolute inset-0 bg-purple-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all"></div>
-                </div>
-                <h3 className="text-xl font-medium text-white mb-2">{member.name}</h3>
-                <p className="text-purple-300 font-light mb-3">{member.role}</p>
-                <p className="text-slate-400 text-sm font-light">{member.background}</p>
-              </div>
+      <section className="section">
+        <div className="container">
+          <h2>Leadership</h2>
+          <div className="leadership">
+            {[
+              ["Kumar Ratnam", "CEO & Co-Founder"],
+              ["Gagandeep Singh Grewal", "CTO & Co-Founder"],
+              [
+                "Vladimir Tcherkacheninov",
+                "Head of Architecture and AI Research",
+              ],
+            ].map(([name, role]) => (
+              <article key={name}>
+                <h3>{name}</h3>
+                <p>{role}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="glass-effect rounded-3xl p-12">
-            <Users className="h-16 w-16 text-purple-400 mx-auto mb-6" />
-            <h2 className="text-4xl font-light text-white mb-6">
-              Join Our Journey
-            </h2>
-            <p className="text-xl text-slate-300 font-light mb-8 max-w-2xl mx-auto">
-              Be part of the revolution in enterprise operations. Let's build the future together.
-            </p>
-            <Link
-              to={createPageUrl('Contact')}
-              className="inline-flex items-center justify-center px-10 py-4 accent-gradient text-white font-medium rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300"
-            >
-              Get in Touch
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
+      <CTA
+        title="Let’s build the right foundations"
+        text="Whether you are adopting a new platform or improving an existing environment, we welcome a conversation about your goals."
+      />
+    </>
   );
 }
