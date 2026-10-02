@@ -55,8 +55,10 @@ export default function AIOps() {
               ],
             ].map(([t, p], i) => (
               <article key={t}>
-                <span className="step-number">0{i + 1}</span>
-                <h3>{t}</h3>
+                <div className="roadmap-heading">
+                  <span className="roadmap-number">{i + 1}</span>
+                  <h3>{t}</h3>
+                </div>
                 <p>{p}</p>
               </article>
             ))}

@@ -574,3 +574,26 @@ footer a:hover {
     scroll-behavior: auto !important;
   }
 }
+
+.roadmap-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.roadmap-heading h3 { margin: 0; }
+.roadmap-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #eee9fb;
+  color: #5842a8;
+  font-size: 16px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
